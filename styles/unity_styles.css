@@ -1,0 +1,75 @@
+body{
+  background-color: black;
+}
+a{
+  text-decoration: none;
+}
+
+.header{
+  background-color: white;
+  padding-block: 10px;
+}
+
+.titles{
+  color: #2E2E2E;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 20px;
+  line-height: 24px;
+  letter-spacing: .5px;
+  padding: 0px 20px;
+}
+.btn{
+  background-color: #2196f3;
+  border: 0px;
+  padding: 0px 16px;
+  line-height: 40px;
+  min-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.btn-nav-bar{
+  border: 0px;
+  background-color: white;
+  border-radius: 22px;
+  padding: 10px;
+  color: #757575;
+}
+.btn-nav-bar:hover{
+  background-color: #ededed;
+}
+.nav-list{
+  color: #212121;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  margin: 0px;
+}
+.nav-list a{
+  color: black;
+}
+.video-bg{
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+.video-bg iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200%;
+  height: 150vh;
+  box-sizing: border-box;
+  z-index: -1;
+  
+}
+.title-area{
+  z-index: 2;
+  color: white;
+  font-weight: 400;
+  width: 50%;
+  padding-left: 20%;
+}
