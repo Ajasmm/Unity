@@ -75,7 +75,7 @@ a{
   font-size: 16px;
   padding-top: 15px;
 }
-.title-area h1{
+.main-title{
   padding-top: 20px;
   width: 50%;
   letter-spacing: 5px;
@@ -247,12 +247,28 @@ a{
   padding-bottom: 80px;
 }
 
+.made-with-hidden{
+  display: none;
+  transition: 0.1s;
+}
 .made-with-unity{
   position: relative;
   height: 1000px;
   margin-bottom: 100px;
   overflow: hidden;
   vertical-align: middle;
+  color: white;
+}
+.made-with-unity p{
+  padding-left: 0px;
+}
+.made-with-unity .card-link{
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: auto;
+}
+.made-with-unity-info h1{
+  padding-top: 100px;
 }
 #made-with-unity-img{
   position: absolute;
@@ -261,7 +277,7 @@ a{
   height: 150vh;
   z-index: -1;
 }
-.made-with-unity-container{
+.made-with-unity-container.sec-lg{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,10 +287,11 @@ a{
   display: flex;
   gap: 10px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .made-with-unity-btn{
+  margin-top: 50px;
   width: 300px;
   min-width: 150px;
   height: 300px;
@@ -296,6 +313,16 @@ a{
   background-color: white;
   color: black;
   border-color: white;
+}
+.made-with-unity-btn:hover .made-with-hidden{
+  display: block;
+}
+.made-with-unity-btn-md{
+  text-align: left;
+  padding: 30px 20px 20px 20px;
+  border-radius: 5px;
+  border: 0px;
+  width: 450px;
 }
 
 .empower{
@@ -327,7 +354,7 @@ a{
   margin: 0px;
 }
 .solution-info{
-  background-image: url("images/solutions.jpg");
+  background-image: url("https://raw.githubusercontent.com/Ajasmm/Unity/bf2a28872e65c8f015264a784e4321ae910ed9ac/images/solutions.jpg");
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +485,7 @@ footer{
     display: none;
   }
   .video-bg{
-    background-image: url("images/Unity Meta callout.webp");
+    background-image: url("https://raw.githubusercontent.com/Ajasmm/Unity/bf2a28872e65c8f015264a784e4321ae910ed9ac/images/Unity%20Meta%20callout.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -471,4 +498,14 @@ footer{
     flex-direction: column;
     justify-content: center;
   }
+  .price-btn{
+    margin-top: 0px;
+  }
+  .main-title{
+    width: 100%;
+  }
+  .sec-lg{
+    display: none;
+  }
 }
+

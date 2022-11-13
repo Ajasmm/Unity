@@ -55,7 +55,7 @@
     <div class="video-bg">
       <div class="title-area container">
         <h4 class="sub-title">BRING YOUR VISION TO LIFE</h4>
-        <h1>THE LEADING PLATFORM FOR REAL-TIME 3D CREATION</h1>
+        <h1 class="main-title">THE LEADING PLATFORM FOR REAL-TIME 3D CREATION</h1>
         <section class="title-btn row">
           <button class="downl-btn col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">Download Unity</button>
           <button class="price-btn col-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">See plans & price</button>
@@ -214,22 +214,59 @@
     </div>
     <div class="made-with-unity">
       <div class="made-with-unity-container container">
-        <section class="button-row">
-          <button class="made-with-unity-btn">
+        <section class="made-with-unity-info">
+          <h1 class="main-title">MADE WITH UNITY</h1>
+          <p class="sub-title">Discover inspiring stories from creators who chose Unity to bring their projects to life.</p>
+          <button class="downl-btn">More stories</button>
+        </section>
+        <section id="sec-lg" class="button-row sec-lg">
+          <button  id="pray-btn" class="made-with-unity-btn">
             <h5 class="made-with-unity-title">PREY FOR THE GODS</h5>
             <p class="made-with-unity-desc">by No matter Studios</p>
+            <section class="made-with-hidden">
+              <p class="made-with-unity-desc">A giant of a winter survival game from a small, highly talented studio.</p>
+              <span class="card-link">Learn more</span>
+            </section>
           </button>
-          <button class="made-with-unity-btn">
+          <button id="pharos-btn" class="made-with-unity-btn">
             <h5 class="made-with-unity-title">PHAROS AR</h5>
             <p class="made-with-unity-desc">by Childisg gambino, wolf + Rosthstein, and MediaMonks</p>
+            <section class="made-with-hidden">
+              <p class="made-with-unity-desc">Enter Childish Gambino's mystical world in the world's first multi-platform, multi-player AR music experience.</p>
+              <span class="card-link">Learn more</span>
+            </section>
           </button>
-          <button class="made-with-unity-btn">
+          <button id="config-car-btn" class="made-with-unity-btn">
             <h5 class="made-with-unity-title">HOW TO CREATE A CONFIGURABLE CAR IN UNITY</h5>
             <p class="made-with-unity-desc">by Edward Martin</p>
+            <section class="made-with-hidden">
+              <p class="made-with-unity-desc">An inside look at real-time rendering for automotive.</p>
+              <span class="card-link">Learn more</span>
+            </section>
+          </button>
+        </section>
+        <section id="sec-md" class="sec-md">
+          <button  id="pray-btn" class="made-with-unity-btn-md">
+            <h5 class="made-with-unity-title">PREY FOR THE GODS</h5>
+            <p class="made-with-unity-desc">by No matter Studios</p>
+            <p class="made-with-unity-desc">A giant of a winter survival game from a small, highly talented studio.</p>
+            <span class="card-link">Learn more</span>
+          </button>
+          <button id="pharos-btn" class="made-with-unity-btn-md">
+            <h5 class="made-with-unity-title">PHAROS AR</h5>
+            <p class="made-with-unity-desc">by Childisg gambino, wolf + Rosthstein, and MediaMonks</p>
+            <p class="made-with-unity-desc">Enter Childish Gambino's mystical world in the world's first multi-platform, multi-player AR music experience.</p>
+            <span class="card-link">Learn more</span>
+          </button>
+          <button id="config-car-btn" class="made-with-unity-btn-md">
+            <h5 class="made-with-unity-title">HOW TO CREATE A CONFIGURABLE CAR IN UNITY</h5>
+            <p class="made-with-unity-desc">by Edward Martin</p>
+            <p class="made-with-unity-desc">An inside look at real-time rendering for automotive.</p>
+            <span class="card-link">Learn more</span>
           </button>
         </section>
       </div>
-      <img id="made-with-unity-img" src="images/pray-of.webp" alt="">
+      <img id="made-with-unity-img" src="images/auto-showcase-1920x1080@1x.jpg" alt="">
     </div>
     <div class="empower">
       <div class="empower-container container">
@@ -449,6 +486,8 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/unity_js.js"></script>
 </body>
 </html>
