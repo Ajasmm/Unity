@@ -327,7 +327,7 @@ a{
   margin: 0px;
 }
 .solution-info{
-  background-image: url("/images/solutions.jpg");
+  background-image: url("images/solutions.jpg");
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ footer{
     display: none;
   }
   .video-bg{
-    background-image: url("/images/Unity Meta callout.webp");
+    background-image: url("images/Unity Meta callout.webp");
     background-repeat: no-repeat;
     background-size: cover;
   }
