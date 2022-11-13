@@ -251,6 +251,13 @@ a{
   display: none;
   transition: 0.1s;
 }
+.made-with-unity-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
 .made-with-unity{
   position: relative;
   height: 1000px;
@@ -258,6 +265,13 @@ a{
   overflow: hidden;
   vertical-align: middle;
   color: white;
+
+  background-image: url("https://raw.githubusercontent.com/Ajasmm/Unity/main/images/pray-of.webp");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .made-with-unity p{
   padding-left: 0px;
@@ -323,6 +337,24 @@ a{
   border-radius: 5px;
   border: 0px;
   width: 450px;
+}
+.sec-md{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block: 10px;
+}
+.md-btn{
+  height: 12px;
+  width: 12px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: #8b98a4;
+  margin-block: 5px;
+}
+.md-btn:hover{
+  background-color: #2196f3;
 }
 
 .empower{
@@ -507,5 +539,12 @@ footer{
   .sec-lg{
     display: none;
   }
+  .made-with-unity{
+    height: 80vh;
+  }
 }
-
+@media (min-width:959px) {
+  .sec-md{
+    display: none;
+  }
+}
