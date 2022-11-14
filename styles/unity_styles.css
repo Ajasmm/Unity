@@ -4,20 +4,30 @@ body{
 a{
   text-decoration: none;
 }
-
 .header{
-  background-color: white;
-  padding-block: 10px;
+  min-height: 50px;
+}
+.header section img{
+  text-align: center;
 }
 
 .titles{
   color: #2E2E2E;
   font-size: 16px;
   font-weight: 500;
-  padding: 0 20px;
+  padding: 0 10px;
   line-height: 24px;
   letter-spacing: .5px;
-  padding: 0px 20px;
+}
+.titles:hover a{
+  color: #2196f3;
+}
+.profile-sec{
+  display: flex;
+}
+.logo{
+  display: flex;
+  align-items: center;
 }
 .btn{
   background-color: #2196f3;
@@ -28,6 +38,18 @@ a{
   font-size: 16px;
   font-weight: 500;
   color: white;
+}
+.menu-btn{
+  color: #404140;
+  display: none;
+  border: 0px;
+  background-color: white;
+  margin-left: 10px;
+}
+.my-navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .btn-nav-bar{
   border: 0px;
@@ -50,6 +72,8 @@ a{
 .nav-list a{
   color: black;
 }
+
+
 .video-bg{
   position: relative;
   display: flex;
@@ -506,7 +530,7 @@ footer{
   flex-wrap: wrap;
 }
 
-@media (max-width:960px) {
+@media (max-width:1199px) {
   .solution-info{
     padding-inline: 50px;
   }
@@ -542,9 +566,28 @@ footer{
   .made-with-unity{
     height: 80vh;
   }
+  .sec-xl {
+      display: none;
+  }
 }
-@media (min-width:959px) {
+
+@media (min-width:1200px){
   .sec-md{
     display: none;
+  }
+}
+
+@media (max-width:760px){
+  .sec-sm {
+    display: none;
+  }
+  .sec-md{
+    display: none;
+  }
+  #get-started-btn{
+    display: none;
+  }
+  .menu-btn{
+    display: inline-block;
   }
 }
