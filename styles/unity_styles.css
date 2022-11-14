@@ -5,7 +5,7 @@ a{
   text-decoration: none;
 }
 .header{
-  min-height: 50px;
+  min-height: 50px; 
 }
 .header section img{
   text-align: center;
@@ -580,6 +580,9 @@ footer{
 @media (max-width:760px){
   .sec-sm {
     display: none;
+  }
+  #made-with-sec-md{
+    display: flex;
   }
   .sec-md{
     display: none;
