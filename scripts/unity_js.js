@@ -55,6 +55,16 @@ $(document).ready(function () {
         document.getElementById("md-pharos-btn").style = "background-color: #8b98a4;"
         document.getElementById("md-config-car-btn").style = "background-color: #2196f3;"
     });
+
+    $('#more-btn').mouseenter(function () {
+        const more_exp_area = document.getElementById('more-exp-area');
+        more_exp_area.style = "display: flex;";
+        
+    });
+    $('#more-btn').mouseleave(function () {
+        const more_exp_area = document.getElementById('more-exp-area');
+        more_exp_area.style.display = "none";   
+    });
     
 });
 
