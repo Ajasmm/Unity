@@ -65,6 +65,41 @@ $(document).ready(function () {
         const more_exp_area = document.getElementById('more-exp-area');
         more_exp_area.style.display = "none";   
     });
+
+    document.getElementById('pro-btn').addEventListener('mouseenter', function () {
+        document.getElementById('mass-exp-heading').innerText = "Unity Pro";
+        document.getElementById('mass-exp-para').innerText = "The complete solution for professional to create and operate realtime 3d experience";
+
+    })
+    document.getElementById('pro-btn').addEventListener('mouseleave', ResetTitleArea);
+
+    document.getElementById('ind-btn').addEventListener('mouseenter', function () {
+        document.getElementById('mass-exp-heading').innerText = "Unity Industrial Collection";
+        document.getElementById('mass-exp-para').innerText = "Bring CAD and 3D data into AR,VR and more with real-time 3D product visualisation.";
+
+    })
+    document.getElementById('ind-btn').addEventListener('mouseleave', ResetTitleArea);
+
+    document.getElementById('ent-btn').addEventListener('mouseenter', function () {
+        document.getElementById('mass-exp-heading').innerText = "Unity Enterprise";
+        document.getElementById('mass-exp-para').innerText = "For large organizations with ambitious goals, creating at scale.";
+
+    })
+    document.getElementById('ent-btn').addEventListener('mouseleave', ResetTitleArea);
+
+    document.getElementById('ads-btn').addEventListener('mouseenter', function () {
+        document.getElementById('mass-exp-heading').innerText = "Unity Ads";
+        document.getElementById('mass-exp-para').innerText = "Monitization and user aquisition solutions to support your revenue and growth goals";
+
+    })
+    document.getElementById('ads-btn').addEventListener('mouseleave', ResetTitleArea);
+
+    document.getElementById('header-pruduct-btn').addEventListener('mouseenter', function () {
+        document.getElementById('product-mass-exp').style = "display: block";
+    });
+    document.getElementById('header-pruduct-btn').addEventListener('mouseleave', function () {
+        document.getElementById('product-mass-exp').style = "display: none";
+    });
     
 });
 
@@ -72,4 +107,9 @@ document.onload = RestAll();
 function RestAll(){
     document.getElementById("lg-pharos-btn").style = "Display : none;"
     document.getElementById("lg-config-car-btn").style = "Display : none;"
+}
+
+function ResetTitleArea() {
+    document.getElementById('mass-exp-heading').innerText = "Discover more tools, Products and solutions";
+    document.getElementById('mass-exp-para').innerText = "Extend the power of the world’s leading platform for creating and operating interactive, real-time 3D content.";
 }
