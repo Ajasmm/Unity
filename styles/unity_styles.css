@@ -84,6 +84,7 @@ a{
   color: #2196f3;
 }
 #more-btn{
+  position: relative;
   justify-content: center;
 }
 .profile-sec{
