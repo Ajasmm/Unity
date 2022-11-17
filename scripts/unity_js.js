@@ -100,6 +100,8 @@ $(document).ready(function () {
     document.getElementById('header-pruduct-btn').addEventListener('mouseleave', function () {
         document.getElementById('product-mass-exp').style = "display: none";
     });
+
+    document.getElementById('menu-btn-id').addEventListener('click', menuDraw);
     
 });
 
@@ -112,4 +114,12 @@ function RestAll(){
 function ResetTitleArea() {
     document.getElementById('mass-exp-heading').innerText = "Discover more tools, Products and solutions";
     document.getElementById('mass-exp-para').innerText = "Extend the power of the world’s leading platform for creating and operating interactive, real-time 3D content.";
+}
+
+function menuDraw() {
+    let side = document.getElementById("menu").style.left
+    if (side == '0px')
+        document.getElementById("menu").style.left = '-250px'
+    else
+        document.getElementById("menu").style.left = '0'
 }

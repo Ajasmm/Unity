@@ -68,12 +68,14 @@ a{
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 0px;
-}
-.more-exp ul{
   list-style: none;
-  padding-left: 0px;
+  padding: 0px;
+}
+.more-exp-area{
+  list-style: none;
+    padding: 0px;
 }
 .more-exp-btn{
   border: 0px;
@@ -84,6 +86,7 @@ a{
   color: #2196f3;
 }
 #more-btn{
+  position: relative;
   justify-content: center;
 }
 .profile-sec{
@@ -145,6 +148,33 @@ a{
 .nav-list a{
   color: black;
   display: block;
+}
+.menu-window{
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  bottom: 0px;
+  width: 250px;
+  z-index: 10;
+  background-color: white;
+  transition: 0.5s;
+}
+#menu-window-btn{
+  
+}
+.menu-list{
+  display: block;
+  padding-inline: 20px;
+}
+.menu-window-aside{
+  width: 200px;
+}
+.menu-list ul{
+  list-style: none;
+}
+.menu-list ul li{
+  padding-block: 5px;
 }
 
 
@@ -603,6 +633,17 @@ footer{
   display: flex;
   flex-wrap: wrap;
 }
+.menu-window-aside{
+  height: calc(100% - 60px);
+}
+#menu-window-btn{
+  width: 100%;
+  margin-inline: 10px;
+}
+.getstarted-btn{
+  width: 100%;
+  margin-bottom: 0px;
+}
 
 @media (max-width:1199px) {
   .solution-info{
@@ -646,6 +687,9 @@ footer{
   .col-lg-4 {
     width: 100%;
   }
+  #menu {
+    left: -250px;
+  }
 }
 
 @media (min-width:1200px){
@@ -675,5 +719,8 @@ footer{
   }
   .title-btn{
     margin-block: 50px;
+  }
+  #menu{
+    display: block;
   }
 }
